@@ -49,8 +49,14 @@ pps.lahiri
 var.pps.cum = pps.cumulative$Estimated.variance
 var.srs.cum = srs.var.function(N,n,y.cum)
 Gain.cum.srs = ((var.srs.cum - var.pps.cum)/var.pps.cum) *100
+var.pps.cum
+var.srs.cum
+Gain.cum.srs
 
 # Gain due to PPS Lahiri's sampling compared to SRS sampling
 var.pps.lahiri = pps.lahiri$Estimated.variance
 var.srs.lahiri = srs.var.function(N,n,y.lahiri)
-Gain.pps.lahiri = ((var.srs.lahiri-var.pps.lahiri)/var.pps.lahiri)*100
+Gain.lahiri.srs = ((var.srs.lahiri-var.pps.lahiri)/var.pps.lahiri)*100
+var.pps.lahiri
+var.srs.lahiri
+Gain.lahiri.srs
